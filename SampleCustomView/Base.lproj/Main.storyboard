@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExperimentA-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" userLabel="ExperimentA" customClass="ExperimentA_controller" customModule="SampleCustomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5x5-tv-8A1" customClass="ChangeColorExpA" customModule="SampleCustomView" customModuleProvider="target">
+                                <rect key="frame" x="87" y="127" width="240" height="275"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="MAU-4t-y1m"/>
+                                    <constraint firstAttribute="width" constant="240" id="NP2-gv-aNS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84074606427932008" green="1" blue="0.92378100475183678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5x5-tv-8A1" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="83" id="iO8-pL-Goi"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="5x5-tv-8A1" secondAttribute="trailing" constant="87" id="por-iV-geo"/>
+                            <constraint firstItem="5x5-tv-8A1" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="87" id="yx7-VH-DBb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Exp A" image="doc" catalog="system" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="-624"/>
+        </scene>
+        <!--ExperimentC-->
+        <scene sceneID="J6r-cp-py6">
+            <objects>
+                <viewController id="eKK-I8-1lu" userLabel="ExperimentC" customClass="ExperimentC_controller" customModule="SampleCustomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="npU-E9-KTl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98868996432656464" green="0.88531446859597351" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="TjG-8C-Zvp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Exp C" image="doc" catalog="system" id="X0N-Sq-dHh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21e-iI-mtC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="544"/>
+        </scene>
+        <!--ExperimentB-->
+        <scene sceneID="euB-xK-e1a">
+            <objects>
+                <viewController id="prm-Za-iH7" userLabel="ExperimentB" customClass="ExperimentB_controller" customModule="SampleCustomView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oNo-kA-tqf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2n-xS-iE9" customClass="ChangeColorExpB">
+                                <rect key="frame" x="87" y="135" width="240" height="275"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="7vB-z3-yAX"/>
+                                    <constraint firstAttribute="width" constant="240" id="VDU-kt-PMV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7130029033557973" green="0.91038636782979798" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="g2n-xS-iE9" firstAttribute="top" secondItem="8Bq-y3-0Jr" secondAttribute="top" constant="91" id="Qz1-Wh-d48"/>
+                            <constraint firstItem="8Bq-y3-0Jr" firstAttribute="trailing" secondItem="g2n-xS-iE9" secondAttribute="trailing" constant="87" id="ZUT-7I-r6F"/>
+                            <constraint firstItem="g2n-xS-iE9" firstAttribute="leading" secondItem="8Bq-y3-0Jr" secondAttribute="leading" constant="87" id="hSb-eL-VkO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Bq-y3-0Jr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Exp B" image="doc" catalog="system" id="Nac-hn-ebO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToD-zh-gw6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1177" y="30"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="prm-Za-iH7" kind="relationship" relationship="viewControllers" id="jqw-8w-gVb"/>
+                        <segue destination="eKK-I8-1lu" kind="relationship" relationship="viewControllers" id="SIY-3C-vDz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-784" y="45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doc" catalog="system" width="56" height="64"/>
+    </resources>
+</document>

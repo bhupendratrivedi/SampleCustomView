@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangeColorView" customModule="SampleCustomView" customModuleProvider="target">
+            <connections>
+                <outlet property="changeColorButton" destination="FGF-pu-Agu" id="SzE-0a-yiO"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="XIP-lb-oSb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGF-pu-Agu">
+                    <rect key="frame" x="94" y="56" width="132" height="38"/>
+                    <color key="backgroundColor" red="0.3777446070317102" green="0.68164737938465858" blue="0.85851222276687622" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                    <state key="normal" title="Change color">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="changeColorButtonTapped:" destination="-1" eventType="touchUpInside" id="EaV-Wn-vXO"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FGF-pu-Agu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JXZ-SI-8We"/>
+                <constraint firstItem="FGF-pu-Agu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UCL-CC-sTd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="29" y="-16"/>
+        </view>
+    </objects>
+</document>
